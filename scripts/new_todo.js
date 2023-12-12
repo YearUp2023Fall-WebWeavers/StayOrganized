@@ -23,7 +23,8 @@ function fetchUsers() {
     })
 
     .then(users => {
-      
+
+      // Clear the existing options
 
       userDropdown.innerHTML = "";
 
@@ -52,7 +53,6 @@ function handleUserDropdown() {
     }
   };
 }
-
 // Function to create a dropdown element with options
 function createDropdown(options, id, labelText) {
   const label = document.createElement('label');
@@ -156,3 +156,10 @@ function addNewTodo() {
 
 // Call the function to create the ToDo form
 createToDoForm();
+
+// pull up the dropdown from HTML
+
+// fetch information for the ADD button 
+
+//ADD button function handler
+
