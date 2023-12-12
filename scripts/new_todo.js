@@ -7,11 +7,9 @@ window.onload = init;
 
 function init() {
   userDropdown.onchange = handleUserDropdown;
-  handleUserDropdown();
+  // fetchUsers();
 }
 
-//Fetching the users from the API and making sure that proper messages were 
-//displayed for troubleshooting purposes.
 function fetchUsers() {
 
   fetch(`http://localhost:8083/api/users`)
@@ -23,7 +21,7 @@ function fetchUsers() {
     })
 
     .then(users => {
-      
+
 
       userDropdown.innerHTML = "";
 
@@ -43,15 +41,12 @@ function fetchUsers() {
 
 // Event handler for user dropdown change.
 function handleUserDropdown() {
-
-  fetchUsers();
-  userDropdown.onchange = () => {
-    let selectedUser = userDropdown.value;
-    if (selectedUser) {
-      handleUserSelection(selectedUser);
-    }
-  };
+  let selectedUser = userDropdown.value;
+  if (selectedUser) {
+    handleUserSelection(selectedUser);
+  }
 }
+
 
 // Function to create a dropdown element with options
 function createDropdown(options, id, labelText) {
