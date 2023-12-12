@@ -10,6 +10,8 @@ function init() {
     handleUserDropdown();
 }
 
+//Fetching the users from the API and making sure that proper messages were 
+//displayed for troubleshooting purposes.
 function fetchUsers() {
 
     fetch(`http://localhost:8083/api/users`)
@@ -39,8 +41,9 @@ function fetchUsers() {
         });
 }
 
+// Event handler for user dropdown change.
 function handleUserDropdown() {
-    // Add an event listener for the change event
+    
     fetchUsers();
     userDropdown.onchange = () => {
         let selectedUser = userDropdown.value;
@@ -50,7 +53,8 @@ function handleUserDropdown() {
     };
 }
 
-
+// Fetch tasks from API for selected user in the dropdown. This uses data "id" to identify which
+// user to fetch at the moment of selection.
 function handleUserSelection(id) {
     // Fetch products for the selected category
 
@@ -86,6 +90,7 @@ function handleUserSelection(id) {
 //     });
 // }
 
+// This function uses text content to dynamically display the tasks on the cards, fetched from the API.
 function displayTasks(tasks) {
 
     clearOutput();
