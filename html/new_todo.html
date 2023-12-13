@@ -9,10 +9,9 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="categories.json">
 </head>
-
 <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="">TO DO List Maker</a>
+    <a class="navbar-brand" href="">To Do List Maker</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,10 +26,10 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="todo.html">Add Task</a>
+            <a class="nav-link" href="todos.html">Add Task</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="newtodo.html">Task List</a>
+            <a class="nav-link" href="new_todo.html">Task List</a>
           </li>
         </ul>
 
@@ -84,17 +83,16 @@
     </div><br>
 
     <!-- Form Request -->
-
     <form id="newTodoForm">
       <label for="textAreaDescription">Description:</label>
       <textarea id="textAreaDescription" rows="4" cols="50"></textarea>
-
+<br>
       <label for="deadlineInput">Deadline (YYYY-MM-DD):</label>
       <input type="text" id="deadlineInput" placeholder="Enter deadline">
 
       <button type="button" onclick="addNewTodo()">Add To Do</button>
     </form>
-
+</center>
 
     <!-- Tasks Display -->
 
