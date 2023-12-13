@@ -65,7 +65,7 @@
     <h1>Add New To Do</h1>
 
     <div class="">
-      
+
       <label>Select Name:</label>
 
       <select id="userDropdown">
@@ -73,15 +73,9 @@
       </select>
     </div><br>
 
-
     <!-- Category Dropdown -->
     <div class="">
       <label>Select Task Category:</label>
-
-  
-    <!-- Category Dropdown -->
-    <div class="">
-
       <select id="categoryDropdown">
         <option id="categoryOption" value="categoryOption"></option>
       </select>
@@ -90,7 +84,6 @@
     <!-- Urgency Dropdown -->
     <div class="">
       <label>Select Priority Level:</label>
-
       <select id="urgencyDropdown">
         <option id="lowUrgencyOption" value="lowUrgencyOption">Low</option>
         <option id="medUrgencyOption" value="medUrgencyOption">Medium</option>
@@ -101,8 +94,8 @@
     <!-- Form Request -->
 
     <form id="newTodoForm">
-      <label for="textAreaDescription">Description:</label>
-      <textarea id="textAreaDescription" rows="4" cols="50"></textarea>
+      <label for="textAreaDescription">Description:</label><br>
+      <textarea id="textAreaDescription" rows="4" cols="50" placeholder="Enter short description..."></textarea><br>
 
       <label for="deadlineInput">Deadline (YYYY-MM-DD):</label>
       <input type="text" id="deadlineInput" placeholder="Enter deadline">
@@ -111,10 +104,7 @@
     </form>
 
 
-    <!-- Tasks Display -->
-
-    <div id="taskDisplay"></div>
-  </main>
+  </main><br>
 
   <main class="container">
     <ul class="list" id="newtask">
